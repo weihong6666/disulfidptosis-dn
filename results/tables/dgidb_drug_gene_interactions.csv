@@ -1,0 +1,5 @@
+Target_Gene,Drug,Approved,InteractionScore,InteractionType,Sources,N_Sources
+IL1B,CANAKINUMAB,True,2.5947,immunotherapy;inhibitor(INHIBITORY),TEND;TdgClinicalTrial;MyCancerGenome;TTD;ChEMBL,5
+IL1B,RILONACEPT,True,0.6919,inhibitor(INHIBITORY),TTD;ChEMBL,2
+SLC3A2,IGN523,False,105.864,antibody(INHIBITORY),GuideToPharmacology;TTD,2
+THSD7A,CLOPIDOGREL,True,2.7145,,PharmGKB,1

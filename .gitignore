@@ -1,0 +1,30 @@
+# ---- Large data / intermediates (reproducible from GEO accessions) ----
+*.rds
+*.RData
+*.Rhistory
+*.Rproj.user
+*.h5ad
+*.h5
+
+# Raw and intermediate expression data
+GSE*_series_matrix*
+GSE*_expr_*.rds
+GPL*.annot
+GPL*.annot.gz
+GPL*.txt
+GSE131882_data/
+
+# ---- Office / OS noise ----
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ---- Keep real figures and tables tracked ----
+!results/figures/*.png
+!results/tables/*.csv

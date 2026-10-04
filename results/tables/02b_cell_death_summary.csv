@@ -1,0 +1,6 @@
+"Pathway","N_Genes","N_Sig_Genes","Pct_Sig","ssGSEA_log2FC","ssGSEA_P"
+"Disulfidptosis",52,27,51.9,-0.745468422553509,0.953287988100844
+"Ferroptosis",41,27,65.9,NA,1.2697811663376e-06
+"Apoptosis",34,18,52.9,NA,0.391765974571711
+"Pyroptosis",23,13,56.5,NA,0.537505088756091
+"Necroptosis",21,7,33.3,NA,0.391765974571711

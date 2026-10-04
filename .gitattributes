@@ -1,0 +1,7 @@
+# Normalise line endings across platforms
+* text=auto eol=lf
+
+# Binary assets
+*.png  binary
+*.docx binary
+*.pdf  binary
