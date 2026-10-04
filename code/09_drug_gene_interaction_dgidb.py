@@ -2,9 +2,9 @@
 """
 用真实的 DGIdb GraphQL API 查询 7 个标志物的药物-基因相互作用。
 
-背景：旧脚本 09_药物预测+分子对接.R 调用的是 dgidb.org/api/v2（已失效），
-当时无网，代码回退到硬编码的 fallback_drugs 清单，论文却写成 "identified through DGIdb"。
-本脚本走真实 API，并把原始结果与过滤后结果分别落盘。
+DGIdb 已从 REST 迁移到 GraphQL（dgidb.org/api/v2 不再有效），因此本脚本使用
+GraphQL 端点查询，并把完整原始结果与按规则过滤后的结果分别落盘，保证可复现、
+可核查。
 
 输出：
   results/dgidb_raw_interactions.csv        全部原始记录

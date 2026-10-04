@@ -1,7 +1,8 @@
 # ============================================================
 # 双硫死亡+DN 竞赛项目 — 08_单细胞分析（RDS版）
 # 数据集：GSE131882 (3 DN + 3 Control 肾组织)
-# 方法：Seurat + 双硫死亡评分 + CellChat + monocle3
+# 方法：Seurat 聚类与细胞注释 + 双硫死亡基因评分
+# 注：本研究未进行细胞通讯（CellChat）分析；文末 monocle3 拟时序为可选模块，未运行
 # ============================================================
 
 library(Seurat)
@@ -311,7 +312,7 @@ if (!is.null(dn_markers_all) && nrow(dn_markers_all) > 0) {
   cat(sprintf("DN vs Control DEGs: %d\n", nrow(dn_markers_all)))
 }
 
-# ---- 9. 拟时序分析 (monocle3) ----
+# ---- 9. 拟时序分析 (monocle3，可选模块；本研究未安装该包，故未运行) ----
 cat("\n===== Pseudotime (monocle3) =====\n")
 
 if (requireNamespace("monocle3", quietly = TRUE)) {

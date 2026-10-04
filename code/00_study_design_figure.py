@@ -113,7 +113,7 @@ ax.set_facecolor('#FAFAFA')
 
 # ── Title ──────────────────────────────────────────────────────────
 
-ax.text(7, 19.3, 'Study Design: Disulfidptosis-Related Biomarkers',
+ax.text(7, 19.3, 'Study Design: Disulfidptosis-Associated Signature',
         ha='center', va='center', fontsize=16, fontweight='bold',
         color=C_TEXT, fontfamily='sans-serif')
 ax.text(7, 18.6, 'in Diabetic Nephropathy',
@@ -156,7 +156,7 @@ draw_stage_box(ax, BOX_X, S2_Y, BOX_W, S2_H,
     'Stage 2: Differential Expression & WGCNA',
     [
         '▶ limma differential analysis: |log₂FC| > 0.5, adj.P < 0.05',
-        '▶ Disulfidptosis gene set (35 genes, Liu et al. 2023)',
+        '▶ Disulfidptosis gene set (53 unique genes, five sources)',
         '▶ Intersection → 9 DR-DEGs (disulfidptosis-related DEGs)',
         '▶ WGCNA co-expression network: β = 10, R² = 0.884, 12 modules',
     ],
@@ -194,9 +194,9 @@ S4_H = 2.5
 draw_stage_box(ax, BOX_X, S4_Y, BOX_W, S4_H,
     'Stage 4: Diagnostic Model & Validation',
     [
-        '▶ Logistic regression-based diagnostic Nomogram',
-        '▶ ROC evaluation: training set (GSE96804) + 2 external validation sets',
-        '▶ Calibration (1000× bootstrap) + DCA decision curve analysis',
+        '▶ Logistic regression diagnostic model + Nomogram',
+        '▶ Nested CV, bootstrap optimism correction, permutation test',
+        '▶ ROC: training + 2 external cohorts; calibration and DCA',
     ],
     C_ACCENT1, C_STAGE4, C_BORDER)
 
@@ -232,20 +232,20 @@ draw_stage_number(ax, BOX_X + 0.3, S5_Y + S5_H - 0.4, 5)
 
 # 6 sub-boxes in a 3x2 grid
 sub_items = [
-    ('Immune Infiltration',
-     'CIBERSORT + ssGSEA\nImmune Checkpoint\nESTIMATE score',
+    ('Pathway Specificity',
+     'Five cell death modalities\nOxidative stress sub-pathways\nssGSEA scoring',
      '❶'),
-    ('Single-Cell Analysis',
-     'Seurat → CellChat\nmonocle3 pseudotime\n20,681 cells, 10 types',
+    ('Immune Microenvironment',
+     'ssGSEA immune signatures\nImmune checkpoint genes\nESTIMATE scores',
      '❷'),
+    ('Single-Cell Analysis',
+     'Seurat clustering + annotation\nPer-cell-type expression\nPseudobulk DE, AUCell',
+     '❸'),
     ('Enrichment Analysis',
      'GO + KEGG\nclusterProfiler\nBP, CC, MF, pathways',
-     '❸'),
-    ('Drug Prediction',
-     'DGIdb drug-gene\ninteraction database\nAutoDock Vina docking',
      '❹'),
-    ('Regulatory Network',
-     'TF → miRNA → ceRNA\nmulti-layer regulatory\nnetwork construction',
+    ('Drug-Gene Interactions',
+     'DGIdb GraphQL query\nDocumented filtering\n4 interactions, 3 genes',
      '❺'),
     ('Protein Validation',
      'HPA IHC\nimmunohistochemistry\nprotein-level verification',
@@ -327,7 +327,7 @@ ax.text(callout_x + callout_w / 2, callout_y + callout_h - 0.2,
         'Key Result', ha='center', va='center',
         fontsize=8, fontweight='bold', color='#1A237E', zorder=6)
 ax.text(callout_x + callout_w / 2, callout_y + 0.35,
-        '7 Disulfidptosis-Related\nDiagnostic Biomarkers\nfor Diabetic Nephropathy',
+        '7-Gene Candidate Signature\nCytoskeletal + Oxidative\nStress Perturbation in DN',
         ha='center', va='center', fontsize=7.2,
         color=C_TEXT, zorder=6, linespacing=1.3)
 
