@@ -1,0 +1,54 @@
+{
+  "title": "Disulfidptosis-associated signature in diabetic nephropathy: analysis code and results",
+  "description": "<p>Analysis code, result tables and figures for a computational study of disulfidptosis-related transcriptional programs in diabetic nephropathy (DN). Four public transcriptomic datasets were integrated (GSE96804 training; GSE30528 and GSE30529 external validation; GSE131882 single-cell), and a seven-gene candidate signature (NCKAP1L, THSD7A, MYH10, PDLIM1, IL1B, FLNB, SLC3A2) was derived by intersecting LASSO, SVM-RFE and Random Forest selection with all feature selection re-executed inside each cross-validation fold. Internal validation used repeated 10x10-fold cross-validation (AUC 0.964), bootstrap optimism correction (corrected AUC 0.956) and permutation testing (P &lt; 0.001); external validation gave AUC 0.923 in glomerular and 0.767 in tubulointerstitial samples.</p><p>The study's main biological result is a negative finding: oxidative stress, pentose phosphate and ferroptosis pathways were profoundly altered in DN, whereas disulfidptosis pathway activity itself was not (P = 0.953). The signature therefore reflects convergent actin cytoskeleton and oxidative stress perturbation rather than isolated disulfidptosis activation. Single-cell analysis localised the signature to biologically coherent compartments (THSD7A to podocytes, SLC3A2 to proximal tubular epithelium, NCKAP1L largely to immune cells).</p><p>The deposit contains the analysis scripts, all manuscript figures and result tables, and the manuscript itself. Raw and intermediate data are not included; they are reproducible from the GEO accessions listed in the repository.</p>",
+  "creators": [
+    {
+      "name": "Zhu, Weixin",
+      "affiliation": "College of Life Sciences, Shanxi Agricultural University"
+    }
+  ],
+  "keywords": [
+    "diabetic nephropathy",
+    "disulfidptosis",
+    "bioinformatics",
+    "transcriptomics",
+    "single-cell RNA sequencing",
+    "biomarker discovery",
+    "machine learning",
+    "oxidative stress",
+    "actin cytoskeleton"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "version": "v1.0.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/weihong6666/disulfidptosis-dn",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE96804",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30528",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30529",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131882",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    }
+  ],
+  "notes": "All data analysed are publicly available from NCBI GEO. No new primary data were generated."
+}

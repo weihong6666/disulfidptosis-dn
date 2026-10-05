@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the archived release."
+title: "Disulfidptosis-associated signature in diabetic nephropathy"
+abstract: >-
+  Analysis code and results for a computational study of disulfidptosis-related
+  transcriptional programs in diabetic nephropathy. Four public transcriptomic
+  datasets were integrated and a seven-gene candidate signature was derived by a
+  triple-machine-learning intersection strategy with nested cross-validation,
+  bootstrap optimism correction and permutation testing. Pathway specificity
+  analysis showed that the signature reflects convergent actin cytoskeleton and
+  oxidative stress perturbation rather than disulfidptosis pathway activation.
+authors:
+  - family-names: Zhu
+    given-names: Weixin
+    affiliation: "College of Life Sciences, Shanxi Agricultural University"
+type: software
+license: MIT
+repository-code: "https://github.com/weihong6666/disulfidptosis-dn"
+keywords:
+  - diabetic nephropathy
+  - disulfidptosis
+  - bioinformatics
+  - transcriptomics
+  - single-cell RNA sequencing
+  - biomarker discovery
