@@ -4,6 +4,8 @@ Analysis code and results for a computational study of disulfidptosis-related tr
 
 The study's central finding is negative-turned-informative: the "disulfidptosis-related" signature in DN does **not** reflect disulfidptosis pathway activation, but convergent perturbation of actin cytoskeleton and oxidative stress programs.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23170443.svg)](https://doi.org/10.5281/zenodo.23170443)
+
 ---
 
 ## 📋 Contents
@@ -17,6 +19,7 @@ The study's central finding is negative-turned-informative: the "disulfidptosis-
 - [Figure index](#-figure-index)
 - [Scope, decisions and limitations](#-scope-decisions-and-limitations)
 - [Manuscript](#-manuscript)
+- [How to cite](#-how-to-cite)
 - [References](#-references)
 
 ---
@@ -209,6 +212,38 @@ This section records analysis decisions that a reader of the manuscript would ot
 ## 📄 Manuscript
 
 `manuscript/manuscript.md` (source), alongside DOCX and PDF renderings. The manuscript is under preparation for journal submission; please cite the repository rather than the manuscript until a version of record exists.
+
+---
+
+## 📖 How to cite
+
+The archived release has a DOI. Please cite the version you actually used.
+
+**Concept DOI** (always resolves to the most recent version):
+
+```
+Zhu, Weixin. (2026). Disulfidptosis-associated signature in diabetic nephropathy:
+analysis code and results (v1.0.0) [Software]. Zenodo.
+https://doi.org/10.5281/zenodo.23170443
+```
+
+**This version (v1.0.0) DOI:** https://doi.org/10.5281/zenodo.23170444
+
+BibTeX:
+
+```bibtex
+@software{zhu_weixin_2026_disulfidptosis,
+  author    = {Zhu, Weixin},
+  title     = {Disulfidptosis-associated signature in diabetic nephropathy:
+               analysis code and results},
+  month     = oct,
+  year      = 2026,
+  publisher = {Zenodo},
+  version   = {v1.0.0},
+  doi       = {10.5281/zenodo.23170443},
+  url       = {https://doi.org/10.5281/zenodo.23170443}
+}
+```
 
 ---
 

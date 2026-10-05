@@ -16,6 +16,9 @@ authors:
 type: software
 license: MIT
 repository-code: "https://github.com/weihong6666/disulfidptosis-dn"
+doi: 10.5281/zenodo.23170443
+version: v1.0.0
+date-released: 2026-10-05
 keywords:
   - diabetic nephropathy
   - disulfidptosis
